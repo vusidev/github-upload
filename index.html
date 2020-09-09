@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Blog</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<style>
+* {
+margin: 0;
+padding: 0;
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+/* Images on smaller screens */
+@media (man-width: 600px) {
+img[data-src-600px] {
+content:attr(data-src-600px,url);
+}
+}
+
+body {
+background-image: url(images.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100vw;
+text-align: center;
+}
+
+.main-nav  {
+margin-top: 20px;
+width: 100%;
+}
+.main-nav ul {
+list-style: none;
+}
+.main-nav ul li {
+display: inline-block;
+}
+.main-nav ul li a {
+display: block;
+color: #FFFFFF;
+font-size: 19px;
+font-family: Arial, sans-serif;
+padding: 5px; 10px;
+text-decoration: none; 
+margin-left: 2px;
+font-weight: bold;
+}
+h1 {
+font-size: 30px;
+font-family: Times, "Times New Roman", serif; 
+padding-top: 30px;
+color: #FFFFFF;
+}
+hr {
+width: auto;
+height: 2px;
+margin-left: 53px;
+margin-right: 59px;
+} 
+p {
+font-size: 18px;
+font-family:Helvetica, Arial, sans-serif;
+color: #FFFFFF;
+padding: 3px;
+}
+.main-nav ul li a:hover {
+color: #000000;
+border: 1px solid white;
+background: transparent;
+transition: 0.5s ease-in;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="main-nav">
+<ul class="nav">
+<li><a href="artist.html">Artists</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="advert.html">Advert</a></li>
+<li><a href="blog.html">Blog</a></li>
+</ul>
+</div>
+<h1>ART GALLERY</h1>
+</div><hr>
+<p>A picture is a poem without words.</p>
+</body>
+</html>
